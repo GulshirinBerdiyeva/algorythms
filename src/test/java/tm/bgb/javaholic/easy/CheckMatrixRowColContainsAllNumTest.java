@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class CheckMatrixRowColContainsAllNumTest {
 
-    private static Stream<Arguments> checkValidTestData() {
+    private static Stream<Arguments> checkValidTestDataProvider() {
         return Stream.of(
                 Arguments.of(new int[][]{{1, 2, 3}, {3, 1, 2}, {2, 3, 1}}, true),
                 Arguments.of(new int[][]{{1, 1, 1}, {1, 2, 3}, {1, 2, 3}}, false),
@@ -19,7 +19,7 @@ class CheckMatrixRowColContainsAllNumTest {
     }
 
     @ParameterizedTest
-    @MethodSource("checkValidTestData")
+    @MethodSource("checkValidTestDataProvider")
     void checkValid(int[][] matrix, boolean expected) {
         var actual = CheckMatrixRowColContainsAllNum.checkValid(matrix);
 

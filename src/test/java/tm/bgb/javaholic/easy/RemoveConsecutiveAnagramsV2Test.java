@@ -11,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class RemoveConsecutiveAnagramsV2Test {
 
-    private static Stream<Arguments> removeAnagramsTestData() {
+    private static Stream<Arguments> removeAnagramsTestDataProvider() {
         return Stream.of(
                 Arguments.of(new String[]{"abba", "baba", "bbaa", "cd", "cd"}, List.of("abba", "cd")),
                 Arguments.of(new String[]{"a", "b", "c", "d", "e"}, List.of("a", "b", "c", "d", "e")),
@@ -20,7 +20,7 @@ class RemoveConsecutiveAnagramsV2Test {
     }
 
     @ParameterizedTest
-    @MethodSource("removeAnagramsTestData")
+    @MethodSource("removeAnagramsTestDataProvider")
     void removeAnagrams(String[] words, List<String> expected) {
         List<String> actual = RemoveConsecutiveAnagramsV2.removeAnagrams(words);
 
