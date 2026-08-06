@@ -20,7 +20,7 @@ class FindNextGreaterElementFromSecondArr4ElementFromFirstArrV2Test {
 
     @ParameterizedTest
     @MethodSource("nextGreaterElementTestDataProvider")
-    void checkValid(int[] nums1, int[] nums2, int[] expected) {
+    void nextGreaterElement(int[] nums1, int[] nums2, int[] expected) {
         var actual = FindNextGreaterElementFromSecondArr4ElementFromFirstArrV2.nextGreaterElement(nums1, nums2);
 
         assertThat(actual).isEqualTo(expected);

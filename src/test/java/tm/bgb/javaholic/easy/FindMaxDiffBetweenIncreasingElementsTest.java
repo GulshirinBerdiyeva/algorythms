@@ -20,7 +20,7 @@ class FindMaxDiffBetweenIncreasingElementsTest {
 
     @ParameterizedTest
     @MethodSource("maximumDifferenceTestDataProvider")
-    void checkValid(int[] nums, int expected) {
+    void maximumDifference(int[] nums, int expected) {
         var actual = FindMaxDiffBetweenIncreasingElements.maximumDifference(nums);
 
         assertThat(actual).isEqualTo(expected);
