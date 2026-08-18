@@ -22,7 +22,7 @@ class RemoveConsecutiveAnagramsTest {
     @ParameterizedTest
     @MethodSource("removeAnagramsTestDataProvider")
     void removeAnagrams(String[] words, List<String> expected) {
-        List<String> actual = RemoveConsecutiveAnagrams.removeAnagrams(words);
+        var actual = RemoveConsecutiveAnagrams.removeAnagrams(words);
 
         assertThat(actual).isEqualTo(expected);
     }
