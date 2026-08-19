@@ -1,6 +1,7 @@
 package tm.bgb;
 
-public class Main {
+public class App {
+
     static void main() {
     }
 }

@@ -20,7 +20,7 @@ public class BinarySearchInsertPositionToDo {
     }
 
     static int searchInsert(int[] nums, int target) {
-        // todo
+        // todo:
         return -1;
     }
 
