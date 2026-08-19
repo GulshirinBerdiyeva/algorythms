@@ -12,7 +12,7 @@ public class IterativelyReverseSingleLinkedList {
     // note: option 1
     // time complexity: O(n)
     // space complexity: O(n)
-    public static ListNode reverseList(ListNode head) {
+    static ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
@@ -33,7 +33,7 @@ public class IterativelyReverseSingleLinkedList {
     }
 
     @Data
-    public static class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 

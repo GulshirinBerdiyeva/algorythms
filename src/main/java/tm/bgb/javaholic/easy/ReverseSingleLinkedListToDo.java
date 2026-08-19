@@ -15,13 +15,13 @@ public class ReverseSingleLinkedListToDo {
         // todo:
     }
 
-    public static ListNode reverseList(ListNode head) {
-        // todo
+    static ListNode reverseList(ListNode head) {
+        // todo:
         return null;
     }
 
     @Data
-    public static class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 
